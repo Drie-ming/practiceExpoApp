@@ -1,4 +1,5 @@
-// types.ts
+
+
 export type Product = {
   id: number;
   name: string;
@@ -12,72 +13,72 @@ export type Product = {
 export const products: Product[] = [
   {
     id: 1,
-    name: "Coca-Cola 1L",
+    name: "Coca-Cola",
     category: "Drinks",
     price: 45,
-    image: require("./assets/images/drinksIcon.png"),
+    image: require("./assets/images/cocaColaCan.png"),
   },
   {
     id: 2,
-    name: "Pepsi 1L",
+    name: "Pepsi ",
     category: "Drinks",
     price: 40,
-    image: require("./assets/images/drinksIcon.png"),
+    image: require("./assets/images/pepsiCan.png"),
   },
   {
     id: 3,
     name: "Potato Chips",
     category: "Snacks",
     price: 25,
-    image: require("./assets/images/chipsIcon.png"),
+    image: require("./assets/images/potato-chips.png"),
   },
   {
     id: 4,
-    name: "Chocolate Bar",
+    name: "Dairy Milk Bar",
     category: "Snacks",
     price: 30,
-    image: require("./assets/images/chipsIcon.png"),
+    image: require("./assets/images/dairyMilkChoco.png"),
   },
   {
     id: 5,
     name: "Popcorn",
     category: "Snacks",
     price: 20,
-    image: require("./assets/images/chipsIcon.png"),
+    image: require("./assets/images/popcorn.png"),
   },
   {
     id: 6,
-    name: "Laundry Powder",
+    name: "Speed Bar Soap",
     category: "Soap & Detergent",
     price: 55,
-    image: require("./assets/images/soapAndDetergentIcon.png"),
+    image: require("./assets/images/speedSoap.jpg"),
   },
   {
     id: 7,
-    name: "Dishwashing Liquid",
+    name: "Joy Dishwashing Liquid",
     category: "Soap & Detergent",
     price: 35,
-    image: require("./assets/images/soapAndDetergentIcon.png"),
+    image: require("./assets/images/joySoap.png"),
   },
   {
     id: 8,
-    name: "Bath Soap",
+    name: "Sulphur Soap",
     category: "Soap & Detergent",
     price: 20,
-    image: require("./assets/images/soapAndDetergentIcon.png"),
+    image: require("./assets/images/sulphurSoap.png"),
   },
   {
     id: 9,
-    name: "Energy Drink",
+    name: "Gerorade",
     category: "Drinks",
     price: 50,
-   image: require("./assets/images/soapAndDetergentIcon.png"),
+   image: require("./assets/images/getorade.jpg"),
   },
   {
     id: 10,
-    name: "Candy Pack",
+    name: "Yakee",
     category: "Snacks",
     price: 10,
-   image: require("./assets/images/soapAndDetergentIcon.png"),
+   image: require("./assets/images/yakee.jpg"),
   },
 ];

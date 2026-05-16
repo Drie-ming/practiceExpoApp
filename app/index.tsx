@@ -2,11 +2,8 @@ import { FlatList, Image, Pressable, Text, View } from "react-native";
 import RemixIcon from "react-native-remix-icon";
 import Header from "@/components/Header";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import drinksIcon from "../assets/images/drinksIcon.png";
-import chipsIcon from "../assets/images/chipsIcon.png";
-import SoapAndDetergentIcon from "../assets/images/soapAndDetergentIcon.png";
-import { products } from "../ProductData";
-import { useEffect, useState } from "react";
+import {products } from "../ProductData";
+import {useState} from "react";
 
 export default function Index() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,21 +38,21 @@ export default function Index() {
       <Header />
 
       <View className="justify-center w-full mb-3 border-y-2 p-2">
-        <Text className="ml-5 text-xl font-semibold">Category</Text>
+        <Text className="ml-5 text-xl font-semibold">Available Producs</Text>
 
         <View className="flex-row justify-center items-center gap-5">
           <Pressable className="">
-            <Image style={{ width: 100, height: 100 }} source={drinksIcon} />
+            <Image style={{ width: 100, height: 100 }} source={require('../assets/images/drinksIcon.png')} />
           </Pressable>
 
           <Pressable>
-            <Image style={{ width: 100, height: 100 }} source={chipsIcon} />
+            <Image style={{ width: 100, height: 100 }} source={require('../assets/images/chipsIcon.png')} />
           </Pressable>
 
           <Pressable>
             <Image
               style={{ width: 100, height: 100 }}
-              source={SoapAndDetergentIcon}
+              source={require('../assets/images/soapAndDetergentIcon.png')}
             />
           </Pressable>
         </View>
@@ -88,7 +85,7 @@ export default function Index() {
         <View className="absolute inset-0 flex-1 justify-center items-center bg-black/50">
           <View className="w-72 p-6 bg-white rounded-lg items-center">
             <Text className="text-lg font-bold mb-4">
-              {selectedProduct?.name}
+              {selectedProduct.name}
             </Text>
 
             

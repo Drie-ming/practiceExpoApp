@@ -38,6 +38,7 @@ const viewCart = () => {
             {item.name} x {item.quantity} — ₱{item.price * item.quantity}
           </Text>
         ))}
+
       </View>
 
       <Pressable
